@@ -14,7 +14,7 @@ export const getData = () => {
 
 export const addData = (val) => {
   const { key, value, expiry = 0 } = val;
-  const timeStamp = Date.now();
+  const timestamp = Date.now();
   storage.push({ key, value, expiry, timestamp });
 };
 
